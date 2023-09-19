@@ -7,12 +7,13 @@
 
 Name:		libgedit-gtksourceview
 Version:	299.0.4
-Release:	%mkrel 2
+Release:	1
 Summary:	Gedit source code editing widget
 Group:		Graphical desktop/GNOME
 License:	LGPLv2+
 URL:		https://github.com/gedit-technology/libgedit-gtksourceview
-Source0:	https://github.com/gedit-technology/libgedit-gtksourceview/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
+Source0:	https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-%{version}.tar.xz
+
 BuildRequires:	meson
 BuildRequires:	gettext
 BuildRequires:	gi-docgen
