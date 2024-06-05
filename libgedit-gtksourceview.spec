@@ -92,7 +92,7 @@ developing applications that use %{name}.
 
 %files -f libgedit-gtksourceview-%{api_ver}.lang
 %license COPYING
-%doc HACKING NEWS README
+%doc HACKING NEWS
 %{_datadir}/libgedit-gtksourceview-%{api_ver}/
 
 %files -n %{girname}
@@ -101,7 +101,7 @@ developing applications that use %{name}.
 
 %files -n %{libname}
 %license COPYING
-%doc HACKING NEWS README
+%doc HACKING NEWS 
 %{_libdir}/libgedit-gtksourceview-%{api_ver}.so.%{major}{,.*}
 
 %files -n %{devname}
