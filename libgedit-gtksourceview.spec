@@ -1,5 +1,5 @@
 %global api_ver		300
-%global major		0
+%global major		1
 
 %define libname		%mklibname gedit-gtksourceview %{api_ver} %{major}
 %define girname		%mklibname gedit-gtksourceview-gir %{api_ver}
