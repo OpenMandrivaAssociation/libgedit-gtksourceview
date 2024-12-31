@@ -1,9 +1,12 @@
 %global api_ver		300
-%global major		2
+%global major		3
 
-%define libname		%mklibname gedit-gtksourceview %{api_ver} %{major}
-%define girname		%mklibname gedit-gtksourceview-gir %{api_ver}
-%define devname		%mklibname gedit-gtksourceview %{api_ver} -d
+%define libname		%mklibname gedit-gtksourceview
+%define oldlibname %mklibname gedit-gtksourceview 300 2
+%define girname		%mklibname gedit-gtksourceview-gir
+%define oldgirname %mklibname gedit-gtksourceview-gir 300
+%define devname		%mklibname gedit-gtksourceview -d
+%define olddevname	%mklibname gedit-gtksourceview 300 -d
 
 Name:		libgedit-gtksourceview
 Version:	299.4.0
@@ -50,6 +53,7 @@ Summary:	Gedit source code editing widget library
 Group:		Editors
 Requires:	%{name} >= %{version}-%{release}
 Obsoletes:	%{_lib}libgedit-gtksourceview300_0 < 299.0.4-2
+%rename %{oldlibname}
 
 %description	-n %{libname}
 libgedit-gtksourceview is a library that extends GtkTextView, the
@@ -63,6 +67,7 @@ Summary:	GObject Introspection interface description for %{name}
 Group:		System/Libraries
 Requires:	%{libname} = %{version}-%{release}
 Obsoletes:	%{_lib}libgedit-gtksourceview-gir300 < 299.0.4-2
+%rename %{oldgirname}
 
 %description	-n %{girname}
 GObject Introspection interface description for %{name}.
@@ -74,6 +79,7 @@ Requires:	%{girname} = %{version}-%{release}
 Provides:	%{name}-devel = %{version}-%{release}
 Provides:	gedit-gtksourceview-devel = %{version}-%{release}
 Obsoletes:	%{_lib}libgedit-gtksourceview300-devel < 299.0.4-2
+%rename %{olddevname}
 
 %description	-n %{devname}
 The %{name}-devel package contains libraries and header files for
