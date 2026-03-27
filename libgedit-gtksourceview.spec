@@ -10,7 +10,7 @@
 
 Name:		libgedit-gtksourceview
 Version:	299.6.alpha1
-Release:	1
+Release:	2
 Summary:	Gedit source code editing widget
 Group:		Graphical desktop/GNOME
 License:	LGPLv2+
