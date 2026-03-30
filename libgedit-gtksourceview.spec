@@ -100,17 +100,14 @@ developing applications that use %{name}.
 %find_lang libgedit-gtksourceview-%{api_ver}
 
 %files -f libgedit-gtksourceview-%{api_ver}.lang
-%license COPYING
-%doc HACKING NEWS
+%doc NEWS
 %{_datadir}/libgedit-gtksourceview-%{api_ver}/
 
 %files -n %{girname}
-%license COPYING
 %{_libdir}/girepository-1.0/GtkSource-%{api_ver}.typelib
 
 %files -n %{libname}
-%license COPYING
-%doc HACKING NEWS 
+%doc NEWS 
 %{_libdir}/libgedit-gtksourceview-%{api_ver}.so.%{major}{,.*}
 
 %files -n %{devname}
