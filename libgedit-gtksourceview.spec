@@ -9,8 +9,8 @@
 %define olddevname	%mklibname gedit-gtksourceview 300 -d
 
 Name:		libgedit-gtksourceview
-Version:	299.6.alpha1
-Release:	2
+Version:	299.7.0
+Release:	1
 Summary:	Gedit source code editing widget
 Group:		Graphical desktop/GNOME
 License:	LGPLv2+
@@ -32,7 +32,7 @@ BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(gtk4)
 BuildRequires:  pkgconfig(gtk-doc)
 BuildRequires:	pkgconfig(libpcre2-8)
-BuildRequires:	pkgconfig(libxml-2.0)
+BuildRequires:	pkgconfig(libxml-2.0) >= 2.15.2
 BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(sysprof-capture-4)
 BuildRequires:	pkgconfig(vapigen)
