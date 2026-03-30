@@ -1,5 +1,5 @@
 %global api_ver		300
-%global major		3
+%global major		5
 
 %define libname		%mklibname gedit-gtksourceview
 %define oldlibname %mklibname gedit-gtksourceview 300 2
