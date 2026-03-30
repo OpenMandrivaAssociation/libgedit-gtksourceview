@@ -33,7 +33,7 @@ BuildRequires:	pkgconfig(gtk4)
 BuildRequires:  pkgconfig(gtk-doc)
 BuildRequires:	pkgconfig(libpcre2-8)
 BuildRequires:  pkgconfig(libgedit-amtk-5)
-BuildRrquires:  pkgconfig(libgedit-gfls-1)
+BuildRequires:  pkgconfig(libgedit-gfls-1)
 BuildRequires:	pkgconfig(libxml-2.0) >= 2.15.2
 BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(sysprof-capture-4)
