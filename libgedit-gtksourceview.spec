@@ -9,7 +9,7 @@
 %define olddevname	%mklibname gedit-gtksourceview 300 -d
 
 Name:		libgedit-gtksourceview
-Version:	299.7.1
+Version:	299.8.0
 Release:	1
 Summary:	Gedit source code editing widget
 Group:		Graphical desktop/GNOME
